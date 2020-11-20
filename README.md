@@ -1,1 +1,2 @@
-# paper-template
+# praktika-template
+Template für Paper im IEEE-Format

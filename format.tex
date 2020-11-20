@@ -1,0 +1,86 @@
+% ----- Standard IEEEtran Formatting -----
+
+%\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage[table]{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+% ----- Custom Formatting -----
+
+% --- Language (can be unneccesary when using babel-package) ---
+
+% Rename "Abstract"
+%\renewcommand{\abstractname}{Zusammenfassung}
+
+% Rename "Index Terms" from IEEEkeywords
+\renewcommand{\IEEEkeywordsname}{Schlüsselworte}
+
+% Rename "References"
+%\renewcommand{\refname}{Literatur}
+
+% Rename "Fig."
+%\renewcommand{\figurename}{Abbildung}
+
+% --- Language and Hyphenation ---
+
+% Correct german hyphenation and renaming of certain keywords
+\usepackage[ngerman]{babel}
+
+% Rename "Zusammenfassung" in babel-package
+\addto{\captionsngerman}{\renewcommand{\abstractname}{Abstract}}
+
+% --- References ---
+
+\usepackage[hidelinks]{hyperref}
+
+% --- Drawing ---
+
+\usepackage{tikz}
+
+% --- Bibliography ---
+
+\bibliographystyle{IEEEtranDE}
+
+% --- Listings ---
+
+\usepackage{listings}
+\lstset{
+	frame=single,
+	language=C++,
+	basicstyle=\ttfamily\footnotesize,
+	showstringspaces=false,
+	tabsize=4
+}
+
+\makeatletter
+\def\lst@makecaption{%
+	\def\@captype{table}%
+	\@makecaption
+}
+\makeatother
+
+% --- PDF Metadata ---
+
+\hypersetup{
+	pdfauthor={Autor},
+	pdftitle={Titel},
+	pdfsubject={Thema},
+	pdfkeywords={Stichwörter},
+	bookmarksnumbered
+}
+
+% --- Tables ---
+
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{makecell}
+
+% --- Prevent widows and orphans ---
+
+\usepackage[all]{nowidow}
