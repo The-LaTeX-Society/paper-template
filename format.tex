@@ -30,10 +30,15 @@
 % --- Language and Hyphenation ---
 
 % Correct german hyphenation and renaming of certain keywords
+\usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 
 % Rename "Zusammenfassung" in babel-package
 \addto{\captionsngerman}{\renewcommand{\abstractname}{Abstract}}
+
+% --- Break URLs at hyphens ---
+
+\usepackage[hyphens]{url}
 
 % --- References ---
 
@@ -42,6 +47,7 @@
 % --- Drawing ---
 
 \usepackage{tikz}
+\usetikzlibrary{shapes,calc,positioning}
 
 % --- Bibliography ---
 
@@ -55,11 +61,19 @@
 
 \usepackage{listings}
 \lstset{
-	frame=single,
-	language=C++,
+	language=python,
 	basicstyle=\ttfamily\footnotesize,
+	numberstyle=\ttfamily\scriptsize,
 	showstringspaces=false,
-	tabsize=4
+	tabsize=2,
+	keepspaces=true,
+	breaklines=true,
+	breakatwhitespace=true,
+	frame=single,
+	numbers=left,
+	numbersep=1em,
+	xleftmargin=2em,
+	framexleftmargin=2em
 }
 
 \makeatletter
