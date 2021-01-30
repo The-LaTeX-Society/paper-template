@@ -33,6 +33,9 @@
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 
+% Turns dots to commas in math mode (optional)
+\DeclareMathSymbol{.}{\mathord}{letters}{"3B}
+
 % Rename "Zusammenfassung" in babel-package
 \addto{\captionsngerman}{\renewcommand{\abstractname}{Abstract}}
 
@@ -98,6 +101,10 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 \usepackage{makecell}
+
+% --- Fix page-wide float bottom alignment ---
+
+\usepackage{dblfloatfix}
 
 % --- Prevent widows and orphans ---
 
