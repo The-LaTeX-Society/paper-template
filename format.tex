@@ -33,11 +33,11 @@
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 
-% Turns dots to commas in math mode (optional)
-\DeclareMathSymbol{.}{\mathord}{letters}{"3B}
-
 % Rename "Zusammenfassung" in babel-package
 \addto{\captionsngerman}{\renewcommand{\abstractname}{Abstract}}
+
+% Change decimal separator to comma in math mode
+\DeclareMathSymbol{.}{\mathord}{letters}{"3B}
 
 % --- Break URLs at hyphens ---
 
